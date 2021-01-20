@@ -1,0 +1,13 @@
+table{
+    margin: auto;
+}
+
+.flex{
+    display: flex;
+    margin: 1rem;
+}
+
+th{
+   text-align: left;
+
+git

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./public/css/main.css">
+    <link rel="stylesheet" href="./public/css/page-landing.css">
+    <title>Calculadora TMB</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <h1>Calculadora TMB</h1>
+    </header>
+
+    <main class="container">
+        <table>
+            <tr>
+                <th>Sexo</th>
+                <td class="sexo flex">
+                    <div class="radio">
+                        <input id="homem" type="radio" name="genero" value="homem" >
+                        <label for="homem">Homem</label>
+                        <input id="mulher" type="radio" name="genero" value="Homem" >
+                        <label for="mulher">Mulher</label>
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <th>Idade</th>
+                <td class="idade flex">
+                    <input id="idade" name="idade" type="number">
+                </td>
+            </tr>
+
+            <tr>
+                <th>Peso atual</th>
+                <td class="peso-atual flex">
+                    <input id="peso-atual" name="peso-atual" type="number" placeholder="kg">
+                </td>
+            </tr>
+
+            <tr>
+                <th>Altura</th>
+                <td class="altura flex">
+                    <input id="altura" name="altura" type="number" placeholder="cm">
+                </td>
+            </tr>
+
+            <tr>
+                <th>Nível de atividade</th>
+                <td class="atividade flex">
+                    <select name="atividade" id="atividade">
+                        <option value="sedentario">Sedentário</option>
+                        <option value="pouco-ativo">Pouco ativo</option>
+                        <option value="ativo">Ativo</option>
+                        <option value="muito-ativo">Muito ativo</option>
+                    </select>                    
+                </td>
+            </tr>
+
+            <tr>
+                <td><button type="button">Calcular</button></td>
+            </tr>
+        </table>
+        
+    </main>
+</body>
+</html>
