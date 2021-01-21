@@ -5,17 +5,27 @@ var altura = document.getElementById("altura");
 var nivelAtividade = document.getElementById("atividade");
 
 function calc(){
+    checkInputs(); 
+}
 
-    checkInputs();
+function checkInputs(){
+    if((idade.value != '') && (pesoAtual.value != '') && (altura.value != '')){
+        calcPermitido();
+    }else{
+        inputVazio();
+    }
+}
+
+function calcPermitido(){
 
     var formulaMasculina = ((10 * pesoAtual.value) + (6.25 * altura.value) - (5 * idade.value) + 5); 
     var formulaFeminina = ((10 * pesoAtual.value) + (6.25 * altura.value) - (5 * idade.value) - 161); 
 
     if(gen.checked){
-       let TaxaMetabolicaBasal = formulaMasculina;
-       console.log("Seu Taxa metabólica basal é: " + Math.trunc(TaxaMetabolicaBasal));
-       
-       addNivelAtividade(TaxaMetabolicaBasal);
+        let TaxaMetabolicaBasal = formulaMasculina;
+        console.log("Seu Taxa metabólica basal é: " + Math.trunc(TaxaMetabolicaBasal));
+        
+        addNivelAtividade(TaxaMetabolicaBasal);
 
     }else{
         let TaxaMetabolicaBasal = formulaFeminina;
@@ -25,39 +35,9 @@ function calc(){
     }
 }
 
-function checkInputs(){
-    if(idade.value === ''){
-        inputVazio(idade);
-    }else{
-        inputPreenchido(idade)
-    }
-
-    if(pesoAtual.value === ''){
-        inputVazio(pesoAtual);
-    }else{
-        inputPreenchido(pesoAtual)
-    }
-
-    if(altura.value === ''){
-        inputVazio(altura);
-    }else{
-        inputPreenchido(altura)
-    }
+function inputVazio(){
+    alert("Peencha todos os campos, por favor!");
 }
-
-function inputVazio(input){
-    const formControl = input.parentElement;
-    formControl.className = 'flex error';  
-}
-
-function inputPreenchido(input){
-    const formControl = input.parentElement;
-    formControl.className = 'flex sucess';  
-}
-
-
-
-
 
 function addNivelAtividade(tmb){
     switch(nivelAtividade.value){

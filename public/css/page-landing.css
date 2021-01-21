@@ -100,9 +100,9 @@ button:hover{
 }
 
 .flex.error input{
-    border:1px solid red;
+    border: 1px solid #F92828;
 }
 
 .flex.sucess input{
-    border: 1px solid green;
+    border: 1px solid #14F92B;
 }
