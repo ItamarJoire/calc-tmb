@@ -45,8 +45,6 @@ function checkInputs(){
     }
 }
 
-
-
 function inputVazio(input){
     const formControl = input.parentElement;
     formControl.className = 'flex error';  

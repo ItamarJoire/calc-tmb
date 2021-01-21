@@ -10,65 +10,68 @@
     <title>Calculadora TMB</title>
 </head>
 <body>
-    <header class="cabecalho">
-        <h1>Calculadora <strong>TMB</strong></h1>
-    </header>
+    <div class="hero">
+        <header class="cabecalho">
+            <h1>Calculadora <strong>TMB</strong></h1>
+        </header>
 
-    <main class="container">
-        <table>
-            <tr>
-                <th>Sexo</th>
-                <td class="sexo flex">
-                    <div class="homem">
-                        <input id="homem" type="radio" name="genero" value="homem" checked>
-                        <label for="homem">Homem</label>
-                    </div>
-                    <div class="mulher">
-                        <input id="mulher" type="radio" name="genero" value="mulher" >
-                        <label for="mulher">Mulher</label>
-                    </div>
-                </td>
-            </tr>
+        <main class="container">
+            <table>
+                <tr>
+                    <th>Sexo</th>
+                    <td class="sexo flex">
+                        <div class="homem">
+                            <input id="homem" type="radio" name="genero" value="homem" checked>
+                            <label for="homem">Homem</label>
+                        </div>
+                        <div class="mulher">
+                            <input id="mulher" type="radio" name="genero" value="mulher" >
+                            <label for="mulher">Mulher</label>
+                        </div>
+                    </td>
+                </tr>
 
-            <tr>
-                <th>Idade</th>
-                <td class="idade flex">
-                    <input id="idade" name="idade" type="number">
-                </td>
-            </tr>
+                <tr>
+                    <th>Idade</th>
+                    <td class="idade flex">
+                        <input id="idade" name="idade" type="number">
+                    </td>
+                </tr>
 
-            <tr>
-                <th>Peso atual</th>
-                <td class="peso-atual flex">
-                    <input id="peso-atual" name="peso-atual" type="number" placeholder="kg">
-                </td>
-            </tr>
+                <tr>
+                    <th>Peso atual</th>
+                    <td class="peso-atual flex">
+                        <input id="peso-atual" name="peso-atual" type="number" placeholder="kg">
+                    </td>
+                </tr>
 
-            <tr>
-                <th>Altura</th>
-                <td class="altura flex">
-                    <input id="altura" name="altura" type="number" placeholder="cm">
-                </td>
-            </tr>
+                <tr>
+                    <th>Altura</th>
+                    <td class="altura flex">
+                        <input id="altura" name="altura" type="number" placeholder="cm">
+                    </td>
+                </tr>
 
-            <tr>
-                <th>Nível de atividade</th>
-                <td class="atividade flex">
-                    <select name="atividade" id="atividade">
-                        <option value="sedentario">Sedentário</option>
-                        <option value="poucoativo">Pouco ativo</option>
-                        <option value="ativo">Ativo</option>
-                        <option value="muitoativo">Muito ativo</option>
-                    </select>                    
-                </td>
-            </tr>
-        </table>
-        <button onclick="calc()" type="button">Calcular</button>
-    </main>
+                <tr>
+                    <th>Nível de atividade</th>
+                    <td class="atividade flex">
+                        <select name="atividade" id="atividade">
+                            <option value="sedentario">Sedentário</option>
+                            <option value="poucoativo">Pouco ativo</option>
+                            <option value="ativo">Ativo</option>
+                            <option value="muitoativo">Muito ativo</option>
+                        </select>                    
+                    </td>
+                </tr>
+            </table>
+            <button onclick="calc()" type="button">Calcular</button>
+        </main>
 
-    <p id="valor">
+        <p id="valor">
 
-    </p>
+        </p>
+        
+    </div>
     <script src="./public/script/app.js"></script>
 </body>
 </html>
