@@ -1,11 +1,9 @@
-
 .cabecalho h1{
-    
     font-size: 1.8rem;
     font-weight: 600;
     color: #F9776F;
     
-    margin: 2rem 0 8rem 2rem;
+    margin: 2rem 0 4rem 2rem;
 }
 
 .container{
@@ -28,11 +26,9 @@ th{
     font-style: normal;
     font-weight: 600;
     font-size: 1.4rem;
-
-    text-align: center;
+    text-align: right;
 
     color: #3E404E;
-    text-align: right;
 }
 
 td{
@@ -43,11 +39,11 @@ td{
     margin-right: 1.2rem;;
 }
 
-
 label[for]{
     font-style: normal;
     font-weight: normal;
     font-size: 1.2rem;
+
     color: #747789;
     margin-left: .4rem;
 } 
@@ -63,6 +59,7 @@ select{
     padding: .4rem 0 .4rem .4rem;
 }
 
+
 input::placeholder{
     color: rgba(116, 119, 137, 0.55);
 }
@@ -71,14 +68,14 @@ button{
     font-style: normal;
     font-weight: 600;
     font-size: 1.4rem;
-
     letter-spacing: 0.05em;
+    border: none;
+
     width: 12.2rem;
     margin-top: 1.6rem;
     padding: .6rem .8rem;
-    border: none;
+   
     color: white;
-
     background: #F9776F;
     border-radius: 3px;
 
@@ -91,3 +88,10 @@ button:hover{
     background-color: #E06B64;
 }
 
+.flex.error input{
+    border:1px solid red;
+}
+
+.flex.sucess input{
+    border: 1px solid green;
+}
