@@ -4,6 +4,8 @@ var pesoAtual = document.getElementById("peso-atual");
 var altura = document.getElementById("altura");
 var nivelAtividade = document.getElementById("atividade");
 
+var resultado = document.getElementById("view");
+
 function calc(){
     checkInputs(); 
 }
@@ -42,7 +44,9 @@ function inputVazio(){
 function addNivelAtividade(tmb){
     switch(nivelAtividade.value){
         case 'sedentario':
-            console.log("Sua Taxa metabólica basal sem atividade física: " + Math.trunc(tmb * 1.375));
+            resultado.innerHTML = `<tr><td> Sua Taxa metabólica basal sem atividade física é: </td><td>${Math.trunc(tmb * 1.375)}</td>`
+
+            // console.log("Sua Taxa metabólica basal sem atividade física: " + Math.trunc(tmb * 1.375));
             break;
         case 'poucoativo':
             console.log("Sua Taxa metabólica basal sendo pouco ativo: " + Math.trunc(tmb * 1.55));
@@ -57,4 +61,6 @@ function addNivelAtividade(tmb){
             console.log("Não selecionou nenhum nível de atividade!");
     }
 }
+
+
 
