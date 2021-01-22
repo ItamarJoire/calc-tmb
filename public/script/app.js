@@ -25,13 +25,13 @@ function calcPermitido(){
 
     if(gen.checked){
         let TaxaMetabolicaBasal = formulaMasculina;
-        console.log("Seu Taxa metabólica basal é: " + Math.trunc(TaxaMetabolicaBasal));
-        
+        resultado.innerHTML = `<tr><td> Sua TMB é:</td><td>${Math.trunc(TaxaMetabolicaBasal)}</td>`
+
         addNivelAtividade(TaxaMetabolicaBasal);
 
     }else{
         let TaxaMetabolicaBasal = formulaFeminina;
-        console.log("Sua Taxa Metabolica Basal é: " + Math.trunc(TaxaMetabolicaBasal));
+        resultado.innerHTML = `<tr><td> Sua TMB é:</td><td>${Math.trunc(TaxaMetabolicaBasal)}</td>`
 
         addNivelAtividade(TaxaMetabolicaBasal);
     }
@@ -44,18 +44,16 @@ function inputVazio(){
 function addNivelAtividade(tmb){
     switch(nivelAtividade.value){
         case 'sedentario':
-            resultado.innerHTML = `<tr><td> Sua Taxa metabólica basal sem atividade física é: </td><td>${Math.trunc(tmb * 1.375)}</td>`
-
-            // console.log("Sua Taxa metabólica basal sem atividade física: " + Math.trunc(tmb * 1.375));
+            resultado.innerHTML += `<tr><td> Sua Taxa metabólica basal sem atividade física é: </td><td>${Math.trunc(tmb * 1.375)}</td>`
             break;
         case 'poucoativo':
-            console.log("Sua Taxa metabólica basal sendo pouco ativo: " + Math.trunc(tmb * 1.55));
+            resultado.innerHTML += `<tr><td> Sua Taxa metabólica basal sendo POUCO ATIVO é: </td><td>${Math.trunc(tmb * 1.55)}</td>`
             break;
         case 'ativo':
-            console.log("Sua Taxa metabólica basal sendo ativo: " + Math.trunc(tmb * 1.725));
+            resultado.innerHTML += `<tr><td> Sua Taxa metabólica basal sendo ATIVO é: </td><td>${Math.trunc(tmb * 1.725)}</td>`
             break;
         case 'muitoativo':
-            console.log("Sua Taxa metabólica basal sendo muito ativo - Atleta: " + Math.trunc(tmb * 1.9));
+            resultado.innerHTML += `<tr><td> Sua Taxa metabólica basal sendo MUITO ATIVO é: </td><td>${Math.trunc(tmb * 1.9)}</td>`
             break;
         default:
             console.log("Não selecionou nenhum nível de atividade!");
