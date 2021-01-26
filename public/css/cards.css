@@ -1,0 +1,87 @@
+html{
+    background-color: #040406;
+}
+
+.hero{
+    max-width: 90%;
+    margin: auto;
+    margin-top: 6rem;      
+    margin-bottom: 6rem;
+    border-radius: 8px;
+    background-color: #22242C;
+}
+.hero h2{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.04em;
+    padding: 4rem 0 0 4rem;
+    color: #FFFFFF;
+
+}
+
+
+.card-all{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+    padding-bottom: 10rem;
+}
+
+.card-container{
+    margin-top: 3rem;
+}
+
+.card-container h3{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 1.9rem;
+    letter-spacing: 0.04em;
+    padding: 2rem;
+    margin-top: 2rem;
+}
+
+.cards{
+    width: 26.7rem;
+    height: 32.1rem;
+    background-color: #292A33;
+    border-radius: 8px;
+
+}
+
+.card-all .card-1 h3{
+    color: #3025AC;  
+}
+
+.card-all .card-2 h3{
+    color: #F8A535;
+}
+
+.card-all .card-3 h3{
+    color: #41883C;
+}
+
+.cards .tmb,
+.cards .consumo,
+.cards .macros{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    letter-spacing: 0.04em;
+    padding: 2.4rem;
+    color: #97949B;
+}
+
+.cards .tmb,
+.cards .consumo{
+    border-bottom: 1px solid rgba(151, 148, 155, 0.1);
+}
+
+.cards .macros li{
+    list-style: none;
+    margin-bottom: 2.4rem;
+}
