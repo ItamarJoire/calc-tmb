@@ -41,10 +41,12 @@ function inputVazio(){
     alert("Peencha todos os campos, por favor!");
 }
 
+
 function addNivelAtividade(tmb){
     switch(nivelAtividade.value){
         case 'sedentario':
             resultado.innerHTML += `<tr><td> Sua Taxa metabólica basal sem atividade física é: </td><td>${Math.trunc(tmb * 1.375)}</td>`
+            resultado.className = "view orange";
             break;
         case 'poucoativo':
             resultado.innerHTML += `<tr><td> Sua Taxa metabólica basal sendo POUCO ATIVO é: </td><td>${Math.trunc(tmb * 1.55)}</td>`
