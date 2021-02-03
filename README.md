@@ -3,8 +3,8 @@
 
 &nbsp;
 
-## Aplicação Calculadora de Taxa Metabólica Basal  :computer: 
-<p> Usuário informa seus dados e recebe suas estatísticas: calorias e macronutrientes necessários para chegar ao objetivo desejado. Manter ou perder peso. </p>
+## Calculadora de Taxa Metabólica Basal  :computer: 
+<p> A aplicação permite o usuário informar seus dados e receber suas estatísticas: calorias e macronutrientes necessários para chegar ao objetivo desejado. Seja manter ou perder peso. </p>
 
 
 &nbsp;
