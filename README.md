@@ -9,7 +9,7 @@
 
 &nbsp;
   
-## Layout :bookmark:
+## Layout :bookmark: 
 <img src="https://github.com/ItamarJoire/calc-tmb/blob/main/public/img/Calculadora-de-Kcal.gif" align="center"> 
 
 
