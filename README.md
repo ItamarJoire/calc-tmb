@@ -1,9 +1,18 @@
-<h1 align = "center"> Calculadora de Kcal <img src="https://github.com/ItamarJoire/calc-tmb/blob/main/public/img/logo.svg" align="center"> </h1>
-
-
-
+<h1 align = "center"> Calculadora de Kcal <img src="https://github.com/ItamarJoire/calc-tmb/blob/main/public/img/logo.svg" width="50" height="50" align="center"> </h1>
 
 
 &nbsp;
 
-<img src="https://github.com/ItamarJoire/calc-tmb/blob/main/public/img/Calculadora-de-Kcal.gif"> 
+## Aplicação Calculadora de Taxa Metabólica Basal  :computer: 
+<p> Usuário informa seus dados e recebe suas estatísticas: calorias e macronutrientes necessários para chegar ao objetivo desejado. Manter ou perder peso. </p>
+
+
+&nbsp;
+  
+## Layout :bookmark:
+<img src="https://github.com/ItamarJoire/calc-tmb/blob/main/public/img/Calculadora-de-Kcal.gif" align="center"> 
+
+
+&nbsp;
+
+
